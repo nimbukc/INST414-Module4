@@ -5,13 +5,10 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
-# Load Dataset
 data = pd.read_csv("Social_Network_Ads.csv")
 
-# Select features
 X = data[["Age", "EstimatedSalary"]]
 
-# Data Scaling
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
